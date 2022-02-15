@@ -1,0 +1,378 @@
+
+//sub operator
+// let salary = 236983;
+// let EMI = 96587;
+// let takeHome = salary-EMI;
+// console.log("the total take home:" +takeHome);
+
+//Add operator
+// let salary = 236983;
+// let additionalIncoome = 96587;
+// let takeHome = salary+additionalIncoome;
+// console.log("the total take home:" +takeHome);
+
+//for multiplication we make use of *
+
+//for division we make of /
+
+//for percentage calucation we make use of %
+
+//incrementor and decrementor
+// let a =5;
+// let b =6;
+// a++;
+// b--;
+// console.log(a);
+// console.log(b);
+
+//literals
+
+// let firstName = 'Rahul';
+// let lastName = 'Chavan';
+// let professional = 'IT';
+// let age = 28;
+// console.log("hello, I'am "+firstName+" "+lastName+
+//  "\n I am an "+professional+
+//   "\n guy and I'm "+age+ "old");
+
+//   console.log(`hello, I'am ${firstName} ${lastName}
+//   I am an ${professional}
+//   guy and I'am ${age} old`);
+
+
+//(==/===)
+//= --> which an assignment operator
+// == --> it will check the data and give the result
+// === --> it will also check the data but along with the data type
+
+// let ab;
+// console.log(typeof(ab));
+// ab = 96;
+// console.log("I am assignment operator and assigning 96 to a:"+ ab);
+// let abc = '96';
+// console.log("I am from == operator check:"+(ab == abc));
+// console.log("I am from === operator check:"+(ab === abc));
+
+// //to check datatype we are going use typeof
+
+// console.log(typeof(ab));
+// console.log(typeof(abc));
+
+
+// console.log('abc' == 'abc');
+
+
+//control flow
+//if 
+
+// let num = 401;
+// if(num%2 ==0)
+// {
+//     console.log("its a even number");
+// }
+// else
+// {
+//     console.log("its a odd number");
+// }
+
+
+//if else
+
+// let grade = 45;
+// if(grade >=70){
+//     console.log("distinction");
+// }
+// else if(grade >= 60 && grade < 70)
+// {
+//     console.log("first class");
+// }
+// else if (grade >= 50 && grade < 60)
+// {
+//     console.log("second class")
+// }
+// else if (grade >= 40 && grade < 50)
+// {
+//     console.log("second class")
+// }
+// else{
+//     console.log("failed");
+// }
+
+
+//ternary operatory
+
+// console.log((num%2 ==0)?"its an even":"its an odd")
+
+// (condition) ? return when condition is true : return when condition is false
+
+
+// let ab = 5698;
+// console.log(typeof("abc"+ab));
+// console.log(typeof(Number("abc"+ab)));
+// console.log(("abc"+ab));
+// console.log((Number("9658"+ab))/0)
+
+
+// let exp = a*b-c+d%e+(5*9);
+
+///control flow
+
+//for loop
+// for(let l=0;l<11;l++)//0<10 //1<10 ....//9<10 //10<=10
+// {
+//     console.log(l);
+// }
+
+//while loop
+// let i=0;
+// while (i < 10) {
+//     console.log(i);
+//     i++;
+//   }
+
+//do while loop
+// let i =0;
+// do {
+//     console.log(i);
+//     i++;
+// }while(i<5);
+
+
+// 'use strict'
+// let hasDiversLic = false;
+// const passedTest = true;
+
+// if(passedTest)
+// {
+//     hasDiversLic = true;
+// }
+// if(hasDiversLic)
+// {
+//     console.log("I can Driver");
+// }
+
+
+//string
+
+// let firstName = 'Rahul';
+// let lastName = 'Chavan';
+
+
+// console.log(firstName.charAt(4));
+// console.log(typeof(firstName));
+// console.log(firstName[3]);
+// console.log(firstName.concat(lastName));
+// console.log(lastName.indexOf('a'));
+// console.log(firstName.replace('a','r'));
+// console.log(firstName.length);
+// console.log(firstName.split('h'));
+// console.log(firstName.toUpperCase());
+// console.log(firstName.slice);
+
+// Arrays
+// let firstName = 'Rahul';
+// let lastName = 'Chavan';
+// let empId=[12,23,45,67,23,63];// 12->0, 23 -> 1
+// console.log(empId[5]);
+// console.log(empId.length);
+// console.log(empId.push(75));
+// console.log(empId.unshift(22));
+// console.log(empId);
+// console.log(empId.shift());
+// console.log(empId.pop());
+// console.log(empId);
+
+
+//Object --> a key value pair
+// let person = {
+//     firstName:"John",
+//     lastName:"Doe",
+//     age:50,
+//     eyeColor:"blue"
+// };
+
+// console.log(person.firstName);
+// console.log(person.lastName);
+
+
+//function
+
+// function consoller() {
+//     console.log("Hello, I am from Javascript function");
+// }
+// consoller();
+// consoller();
+// consoller();
+
+// function fruitProcessor(apple, oranges) {
+//     const juice = `juice with ${apple} apples and ${oranges} oranges.`;
+//     return juice;
+// }
+// //fuction call/function invoke/function runtime
+// const funCaller = fruitProcessor(4,6);
+// console.log(funCaller);
+
+
+//function expression
+
+//How normal function have syntax
+// function ageCal (brithyear) {
+//     return 2022 - brithyear;
+// }
+// console.log(ageCal(1992));
+
+// How function expression have syntax
+// const ageCalculation = function (brithyear) {
+//     return 2022 - brithyear;
+// }
+// console.log(ageCalculation(1992));
+
+// Arrow function
+
+// const ageCalculation = (brithyear, firstName) => {
+//     const age = 2022 - brithyear;
+//     return `${firstName} are you ${age} years old ?`
+// }
+// console.log(ageCalculation(1992,'Rahul'));
+
+
+//IIFE(Immediate Invoke of function Expression)
+
+// (function () {
+//     console.log("hello IIFE Function");
+// })();
+// {
+//     let abc = 'Rahul Chavan';
+//     const abcd = 'Chavan Rahul';
+//     var ab = "Rahul";
+// }
+// // console.log("I am from let Variable"+ abc);
+// // console.log("I am from const Variable"+ abcd);
+// console.log("I am from var Variable"+ ab);
+
+
+//prototype
+// const myObject = {
+//     city: 'Madrid',
+//     greet() {
+//       console.log(`Greetings from ${this.city}`);
+//     }
+//   }
+//   myObject.greet();
+
+
+  // Scoping
+
+  // golobal scope : a function or variable declared on top of the File
+
+  // const abc = "abc"
+  // function a() {
+  //   let abcd = 'adc'
+  //   console.log(abc);
+  //   console.log(abcd);
+  // }
+  // a();
+  // console.log(abc);
+  // console.log(abcd);
+
+  //lexical scoping....
+
+  // function part1() {
+  //   var name = 'Rahul';
+  //   console.log(name);
+  //   // console.log(age);
+  //   // console.log(lastname);
+  //   function part2() {
+  //     var age = 30;
+  //     console.log(name);
+  //     console.log(age);
+  //     // console.log(lastname);
+  //     function part3() {
+  //       var lastname='Chavan';
+  //       console.log(name);
+  //       console.log(age);
+  //       console.log(lastname);
+  //     }
+  //     part3();
+  //   }
+  //   part2();
+  // }
+  // part1();
+  
+
+
+  //Hoisting...
+//   carName("BMW");
+  
+//   function carName(name) {
+//     console.log("I have" +name);
+//   }
+  
+
+// let abc;
+// console.log(abc);
+// abc = "dadafs";
+// console.log(abc);
+
+
+//destructing
+
+// const a = [1,2,3,4,5];
+// const [x , y]= a;
+// console.log(x);
+// console.log(y);
+
+
+// spread operator
+
+// let wholeNumber = [1,2,3,4,5];
+// let newNumber = [6,7,8,9];
+// let completeNumber  = [...wholeNumber, ...newNumber];
+// console.log(completeNumber);
+
+
+// Loops
+
+//Normal For loop
+// let count =5
+// for(let i =1 ;i<=count ;i++)
+// {
+//   console.log(i);
+// }
+
+// //For-of loop
+// let a = ['a','b','c','d'];
+// for(let i of a){
+//   console.log(i);
+// }
+
+// //forEach
+// a.forEach((element,index) => {
+//   console.log(element,index);
+// })
+
+
+//promise
+
+// let count = false;
+// let countValue = new Promise(function (res, rej) {
+// if(count) {
+//   res("the count value is true");
+// }
+// else{
+//   rej("the count value is false");
+// }
+// });
+// console.log(countValue)
+
+// setTimeout(() => {
+//   console.log('1 Sec Pass');
+//   setTimeout(() => {
+//     console.log('2 sec pass');
+//   },1000)
+// },10000)
+
+
+alert("hello").addEventListener('click', function () {
+  console.log("hello world");
+})
